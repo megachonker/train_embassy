@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "probe-rs-debug",
+            "request": "launch",
+            "name": "probe_rs Executable Test",
+            "chip": "STM32H745ZITx",
+            "coreConfigs": [
+                {
+                    //!MODIFY
+                    "programBinary": "./target/thumbv7em-none-eabihf/debug/${workspaceFolderBasename}"
+                }
+            ]
+        }
+    ]
+}
